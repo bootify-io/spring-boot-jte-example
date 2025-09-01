@@ -42,7 +42,9 @@ public class ProductService {
     }
 
     public void delete(final Long id) {
-        productRepository.deleteById(id);
+        final Product product = productRepository.findById(id)
+                .orElseThrow(NotFoundException::new);
+        productRepository.delete(product);
     }
 
     private ProductDTO mapToDTO(final Product product, final ProductDTO productDTO) {
