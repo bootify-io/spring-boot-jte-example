@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.1</version>
+        <version>4.0.2</version>
         <relativePath /><!-- lookup parent from repository -->
     </parent>
     <groupId>io.bootify</groupId>
@@ -42,12 +42,12 @@
         <dependency>
             <groupId>gg.jte</groupId>
             <artifactId>jte-spring-boot-starter-3</artifactId>
-            <version>3.2.1</version>
+            <version>3.2.2</version>
         </dependency>
         <dependency>
             <groupId>gg.jte</groupId>
             <artifactId>jte</artifactId>
-            <version>3.2.1</version>
+            <version>3.2.2</version>
         </dependency>
         <dependency>
             <groupId>org.webjars</groupId>
@@ -75,7 +75,7 @@
             <plugin>
                 <groupId>gg.jte</groupId>
                 <artifactId>jte-maven-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>3.2.2</version>
                 <configuration>
                     <sourceDirectory>${project.basedir}/src/main/jte</sourceDirectory>
                     <targetDirectory>${project.build.directory}/classes</targetDirectory>
